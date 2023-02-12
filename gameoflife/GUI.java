@@ -68,12 +68,6 @@ class GUI implements ActionListener {   // this class must have actionPerformed 
         }
 
         // remember , to format text within a JLABEL use HTML coding
-        //create output label
-        /*output = new JLabel (); //"<html><font face=Arial size=9 color = blue >Poker!</font>"
-        output.setHorizontalTextPosition (JLabel.CENTER);
-        output.setBounds (240, 400, 110, 50); //xpos, ypos, xlen, ylen
-        contentPane.add (output); */
-
         // create button1 (Toggle Run button)
         button1 = new JButton ("Toggle Run");
         button1.addActionListener (this);
@@ -106,7 +100,6 @@ class GUI implements ActionListener {   // this class must have actionPerformed 
 
     public void actionPerformed (ActionEvent event) {
 	//Check which button is clicked
-	    //String eventName = event.getActionCommand ();     // using source instead
 
         if (event.getSource () == button1)      //Toggle run by using timer
         {
